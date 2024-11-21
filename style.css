@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    margin: 350px;
+}
+
+img{
+    margin: 10px 20px;
+}
+
+/* FONT SIZES AND COLORS */
+h3{
+    font-family: "Barlow Semi Condensed";
+    font-weight: 600;
+    font-size: 21px;
+    position: relative;
+    z-index: 2;
+    margin: 0 23px;
+    padding: 30px 0;
+    text-align: start;
+}
+h4{
+    font-family: "Barlow Semi Condensed";
+    color: hsla(0, 0%, 100%,);
+}
+ 
+.text p{
+    font-family: "Barlow Semi Condensed";
+    font-size: 15px;
+    color:hsla(0, 0%, 100%, 0.5);
+    
+}
+
+span p{
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    color:hsla(0, 0%, 100%, 0.7);
+    margin: 0 23px;
+    line-height: 1.5;
+}
+
+.itm-3 p{
+    font-family: "Barlow Semi Condensed";
+    color: hsl(217, 19%, 35%);
+    font-size: 13px;
+}
+
+.itm-3 h3{
+    color: hsl(217, 19%, 35%);
+    font-family: "Barlow Semi Condensed";
+    font-weight: 600;
+}
+
+.itm-3 h4{
+    color: hsl(217, 19%, 35%);
+    font-family: "Barlow Semi Condensed";
+    font-weight: 600;
+}
+
+.itm-5 p{
+    color: hsl(217, 19%, 35%);
+    font-family: "Barlow Semi Condensed";
+}
+
+.itm-5 h4{
+    color: hsl(217, 19%, 35%);
+    font-family: "Barlow Semi Condensed";
+}
+
+.itm-5 h3{
+    color: hsl(217, 19%, 35%);
+    font-family: "Barlow Semi Condensed";
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+/* THE BIG QUOTE ICON */
+svg{
+    float: right;
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    z-index: 1;
+}
+.txt{
+    line-height: 0.3;
+    margin-left: 15px;
+}
+
+/* /* ROUNDED IMGS AND BORDER */
+#itm-1-img{
+    border-radius: 50%;
+    border: 2px solid hsla(210, 46%, 95%, 0.6);
+    float: left;
+    margin-right: 20px;
+}
+
+#itm-2-img{
+    border-radius: 50%;
+    float: left;
+}
+
+#itm-3-img{
+    border-radius: 50%;
+    float: left;
+}
+
+#itm-4-img{
+    border-radius: 50%;
+    border: 2px solid hsl(263, 55%, 52%);
+    float: left;
+}
+
+#itm-5-img{
+    border-radius: 50%;
+    float: left;
+}
+
+/* FOR MOBILE DEVICES */
+/* @media only screen and (min-width: 200px){
+
+.items{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.itm-1{
+    max-width: 18rem;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.itm-2{
+    width: 18rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.itm-3{
+    width: 18rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.itm-4{
+    width: 18rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+.itm-5{
+    width: 18rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+} */
+
+       /* FOR DESKTOP */
+       @media only screen and (min-width: 1200px){
+
+        .items{
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        
+        .itm-1{
+            grid-column: 1 / span 2;
+            background-color: hsl(263, 55%, 52%);
+            color: hsl(0, 0%, 100%); 
+            padding: 20px;
+        }
+        
+        .itm-2{
+            background-color: hsl(217, 19%, 35%);
+            color: hsl(0, 0%, 100%); 
+            padding: 20px;
+        }
+        
+        .itm-3{
+            background-color: hsl(0, 0%, 100%);
+            color: hsl(217, 19%, 35%);
+            padding: 20px;
+        }
+        
+        .itm-4{
+            grid-area: 2 / 2 / 3 / span 2;
+            background-color: hsl(219, 29%, 14%);
+            color: hsl(0, 0%, 100%); 
+            padding: 20px;
+        }
+        
+        .itm-5{
+            grid-area: 1 / 4 / span 2 / 5;
+            background-color: hsl(0, 0%, 100%);
+            color: hsl(217, 19%, 35%);     
+            padding: 20px;
+        }
+        }
